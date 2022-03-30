@@ -2,15 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ajax-utils.js"></script>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Healthy Living Investments UX Website Design</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../styles7.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <script>
+      console.log(x);
+    </script>
   </head>
 <body>
+
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
@@ -39,25 +50,34 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
+          
             <li id="navHomeButton" class="visible-xs active">
               <a href="index3.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
+                <span class="glyphicon glyphicon-home"><br></span> Home</a>
             </li>
+          
             <li id="navMenuButton">
               <a href="websiteusability.html" onclick="$dc.loadMenuCategories();">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Website Usability</a>
+                <span class="glyphicon glyphicon-cutlery">&nbsp;</span><br class="hidden-xs">Website Usability</a>
             </li>
+          <!--
             <li id="navInvestment">
               <a href="investmenteducation.html">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Investment Education</a>
             </li>
+          -->
+          <li id="navPortfolio">
+            <a href="portfolio.html">
+              <span class="glyphicon glyphicon-certificate">&nbsp;</span><br class="hidden-xs">Portfolio</a>
+          </li>
             <li id="navBrand">
               <a href="brandmarketing.html">
-                <span class="glyphicon-home"></span><br class="hidden-xs">Brand Marketing</a>
+                <span class="glyphicon-home">&nbsp;</span><br class="hidden-xs">Brand Marketing</a>
             </li>
-            <li id="navPortfolio">
-              <a href="portfolio.html">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Portfolio</a>
+            <li id="navSelect">
+              <div class="active">
+              <a href="select-categories.html">
+                <span class="glyphicon-home">&nbsp;</span><br class="hidden-xs">Selections</a>
             </li>
             <br>
             <li id="phone" class="hidden-xs">
@@ -69,12 +89,36 @@
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
+  <br>
+  <div class="container">
+  <p>
+    Search Site
+    <input id="name" type="text">
+    <button onclick="sayHello();">
+      Find it!
+    </button>
 
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:904-352-6609">
-    <span class="glyphicon glyphicon-earphone"></span>
-    </a>
+    <div class="email">
+      <a href="mailto:elisabeth@healthylivinginvestments@gmail.com">
+          <span class="hidden-xs"><h5><bold>Send a message!</bold></h5></span></a>
+    </div>
+    </p>
+    </div>
+  <!--
+  <p>
+    Discover More
+    <input type="textarea" width="250">
+    <button>
+      Send a message!
+    </button>
+  </p>
+-->
+  </p>
   </div>
+   <div id="content"></div>
+   <script src="js/script.js"></script>
+
+
   <div id="xs-deliver" class="text-center visible-xs">25% off for New Customers</div>
 
   <div id="main-content" class="container">
@@ -100,6 +144,11 @@
     </div>
   </div>
 
+  <script>
+    console.log("right before closing tag");
+  </script>
+
+</body>
 
   <footer class="panel-footer"> 
     <div class="container">
@@ -119,8 +168,8 @@
           <hr class="visible-xs">
         </section>
         <section id="testimonials" class="col-sm-4">
-          <p>"Creative website design"</p>
-          <p>"SEO advice"</p>
+          <p>"Creative website designer"</p>
+          <p>"Knowledgable about SEO"</p>
         </section>
       </div>
       <div class="text-center">&copy; Copyright Elisabeth Noble 2022</div>
